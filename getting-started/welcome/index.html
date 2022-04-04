@@ -1,4 +1,22 @@
 ---
 layout: main
-title: Welcome to JavaScript! | Learn JavaScript
+title: Welcome to JavaScript!
 ---
+<p><span class="lead">We will be learning about <i>lexical structure</i>,</span> the first thing you should learn. It's the set of rules that define how you write a program.</p>
+
+<h2>Text</h2>
+<p>JavaScript is a <i>case-sensitive</i> language. This means that language keywords, function names, variables, and other <i>identifiers</i> must always be typed with a consistent capitalization. The <code>while</code> keyword, for example, can only be typed all in lowercase, that is, <code>while</code>, and not <code>While</code> or <code>WHILE</code>.</p>
+<p>JavaScript ignores spaces between <i>tokens</i> in programs. Usually, JavaScript ignores line breaks, but there are a few special cases. Because you can use spaces and newlines freely, you can format and indent your code to be nice and easy to read. For example, which code is easier to read?</p>
+<pre>
+           var         x         =           2      +                  3            ;
+</pre>
+<pre>
+var     x     =     2     +     3     ;
+</pre>
+<pre>
+var x = 2 + 3;
+</pre>
+<pre>
+varx=2+3;
+</pre>
+<p>The third looks best, of course. The fourth, however, is the worst. The JavaScript interpreter would interpret it <code>varx</code> as a variable's name. JavaScript also recognizes tabs, ASCII control charcters, and various Unicode whitespace.</p>
