@@ -19,4 +19,81 @@ var x = 2 + 3;
 <pre>
 varx=2+3;
 </pre>
-<p>The third looks best, of course. The fourth, however, is the worst. The JavaScript interpreter would interpret it <code>varx</code> as a variable's name. JavaScript also recognizes tabs, ASCII control charcters, and various Unicode whitespace.</p>
+<p>The third looks best, of course. The fourth, however, is the worst. The JavaScript interpreter would interpret <code>varx</code> as a variable's name instead of <code>var x</code>. JavaScript also recognizes tabs, ASCII control charcters, and various Unicode whitespace.</p>
+
+<h2>Comments</h2>
+<p>JavaScript supports two types of comments. Any text between <code>&#47;&#47;</code> and the end of the line is treated as a comment and ignored by JavaScript. Any text between <code>&#47;*</code> and <code>*&#47;</code> is treated as a comment, too. Comments can't be nested. These are valid comments:</p>
+<pre>
+&#47;&#47; This is a comment
+&#47;* These are *&#47; &#47;&#47; comments, too.
+&#47;*
+ * Comments can span multiple lines, too. The
+ * stars at the start of each line aren't
+ * required, but they look nice and neat!
+*&#47;
+&#47;*
+See?
+*&#47;
+</pre>
+
+<h2>Literals</h2>
+<p>A literal is a data value, like <code>"Hello!"</code> or <code>3.1415926</code> appearing directly in a program. They will be explained later.</p>
+
+<h2>Identifiers and Reserved Words</h2>
+<p><i>Identifiers</i> are used to a name functions, variables, constants, properties, methods, and classes. An identifier can start with a letter, an underscore, or a dollar sign. These are all valid:</p>
+<pre>
+x
+slithering_snake
+theBigCamel
+$IHave
+</pre>
+<h3>Reserved Words</h3>
+<p>Like all languages, JavaScript has reserved words. They are:</p>
+<pre>
+as
+aync
+await
+break
+case
+catch
+class
+const
+continue
+debugger
+default
+delete
+do
+else
+export
+extends
+false
+finally
+for
+from
+function
+get
+if
+import
+in
+instanceof
+let
+new
+null
+of
+return
+set
+static
+super
+switch
+target
+this
+throw
+true
+try
+typeof
+var
+void
+while
+with
+yield
+</pre>
