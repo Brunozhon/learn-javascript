@@ -97,3 +97,33 @@ while
 with
 yield
 </pre>
+
+<p>JavaScript also restricts the use of words that might be used in future versions:</p>
+
+<pre>
+enum
+implements
+interface
+package
+private
+protected
+public
+</pre>
+
+<p>For historical reasons, <code>arguments</code> and <code>eval</code> are not allowed as identifiers and are best avoided entirely.</p>
+
+<h2>Unicode</h2>
+<p>JavaScript programs are written using Unicode, but it's common to use only ASCII letters and digits in identifiers. The language allows Unicode letters, digits, and <i>ideographs</i> (but not emojis) in identifiers. This means that we can use those identifiers:</p>
+<pre>
+π  // The mathamatical constant pi (3.1415926)
+ñ  // n with a tilde
+si&DiacriticalAcute; // Yes in Spanish
+</pre>
+
+<h3>Unicode Escape Sequences</h3>
+<p>Some computer hardware can't display, input, or even correctly process the full set the Unicode characters. To support that need, Unicode escape sequences were invented. To write cafe&DiacriticalAcute;, you can write <code>cafe&bsol;u{301}</code>, <code>caf&bsol;u00e9</code>, or <code>code&bsol;u{E9}</code> You can use this in any identifier except keywords.</p>
+<p>Early versions of JavaScript only suppported the four-digit escape sequence. The newer version was added to better cope with emoji.</p>
+<pre>
+console.log("😀") // Prints a smiley.
+console.log("&bsol;u{1F600}") // Prints a smiley, too.
+</pre>
